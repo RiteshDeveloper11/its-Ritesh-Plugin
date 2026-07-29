@@ -101,14 +101,14 @@ export async function createInitialHelpMenu(client) {
             },
             {
                 name: '\u200B',
-                value: `-# ${botName} `,
+                value: `-# **${botName}** `,
                 inline: false,
             },
         ],
     });
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "Made by Ritesh Gamer." 
     });
     embed.setTimestamp();
 
@@ -118,7 +118,7 @@ export async function createInitialHelpMenu(client) {
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Channels")
+        .setLabel("Support Channel")
         .setURL("https://discord.gg/QY6wsN64w3")
         .setStyle(ButtonStyle.Link);
 
