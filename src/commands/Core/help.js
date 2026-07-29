@@ -118,7 +118,7 @@ export async function createInitialHelpMenu(client) {
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Channel")
+        .setLabel("Support Server")
         .setURL("https://discord.gg/QY6wsN64w3")
         .setStyle(ButtonStyle.Link);
 
