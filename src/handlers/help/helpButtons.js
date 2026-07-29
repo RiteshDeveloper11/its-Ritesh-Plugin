@@ -43,7 +43,7 @@ export const helpBugReportButton = {
         const githubButton = new ButtonBuilder()
             .setLabel('🐛 Report Bug on GitHub')
             .setStyle(ButtonStyle.Link)
-            .setURL('https://github.com/codebymitch/TitanBot/issues');
+            .setURL('https://discord.gg/bePMaTBG5N');
 
         const bugRow = new ActionRowBuilder().addComponents(githubButton);
 
@@ -54,7 +54,6 @@ export const helpBugReportButton = {
                 '• 📝 Detailed description of the issue\n' +
                 '• 📋 Steps to reproduce the problem\n' +
                 '• 📸 Screenshots if applicable\n' +
-                '• 💻 Your bot version and environment\n\n' +
                 'This helps us fix issues faster and more effectively!',
             color: 'error'
         });
