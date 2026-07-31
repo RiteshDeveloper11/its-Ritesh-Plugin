@@ -85,8 +85,8 @@ export async function createInitialHelpMenu(client) {
             {
                 name: '🚀 Getting Started',
                 value: [
-                    '**1. Launch setup** — Run `/configwizard` to configure prefix, mod role, and logs.',
-                    '**2. Enable systems** — Use `/commands dashboard` to turn categories on or off.',                    '**3. Browse commands** — Use the menu below to view categories and commands.',
+                    '**1. Select to view the commands** — Click To View All Commands.',
+                    '**2. Suppoer Channel** — Need Help, Click To Open a Ticket in our Support Channel.',                    '**3. Report Bug** — Click To Report a Bug.',
                 ].join('\n'),
                 inline: false,
             },
