@@ -86,7 +86,7 @@ export async function createInitialHelpMenu(client) {
                 name: '🚀 Getting Started',
                 value: [
                     '**1. Select to view the commands** — Click To View All Commands.',
-                    '**2. Suppoer Channel** — Need Help, Click To Open a Ticket in our Support Channel.',                    '**3. Report Bug** — Click To Report a Bug.',
+                    '**2. Support Channel** — Need Help, Click To Open a Ticket in our Support Channel.',                    '**3. Report Bug** — Click To Report a Bug.',
                 ].join('\n'),
                 inline: false,
             },
