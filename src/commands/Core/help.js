@@ -93,8 +93,7 @@ export async function createInitialHelpMenu(client) {
             {
                 name: 'ℹ️ How It Works',
                 value: [
-                    '• Dashboard commands manage each feature visually',
-                    '• Slash commands and prefixes both work once enabled',
+                    '• Dashboard commands manage each feature visually'
                 ].join('\n'),
                 inline: false,
             },
