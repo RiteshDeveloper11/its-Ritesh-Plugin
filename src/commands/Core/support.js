@@ -12,7 +12,7 @@ export default {
   async execute(interaction) {
     try {
       const supportButton = new ButtonBuilder()
-        .setLabel("Join Support Server")
+        .setLabel("Support Channels")
         .setStyle(ButtonStyle.Link)
         .setURL(SUPPORT_SERVER_URL);
 
@@ -20,7 +20,7 @@ export default {
 
       await InteractionHelper.safeReply(interaction, {
         embeds: [
-          createEmbed({ title: "Need Help?", description: "Join our official support server for assistance, report bugs, or suggest features. If you are customizing this bot, remember to change the link in the code!" }),
+          createEmbed({ title: "Need Help?", description: "Need Help? With Our Bot or Commands & Bug Report Click Button Below" }),
         ],
         components: [actionRow],
         flags: MessageFlags.Ephemeral,
