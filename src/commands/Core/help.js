@@ -94,14 +94,13 @@ export async function createInitialHelpMenu(client) {
                 name: 'ℹ️ How It Works',
                 value: [
                     '• Dashboard commands manage each feature visually',
-                    '• Settings are saved per server',
                     '• Slash commands and prefixes both work once enabled',
                 ].join('\n'),
                 inline: false,
             },
             {
                 name: '\u200B',
-                value: `-# **${botName}** `,
+                value: `-# **__${botName}__** `,
                 inline: false,
             },
         ],
