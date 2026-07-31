@@ -12,7 +12,7 @@ export default {
   async execute(interaction) {
     try {
       const supportButton = new ButtonBuilder()
-        .setLabel("Support Channels")
+        .setLabel("Support Channel")
         .setStyle(ButtonStyle.Link)
         .setURL(SUPPORT_SERVER_URL);
 
