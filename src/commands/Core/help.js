@@ -83,7 +83,7 @@ export async function createInitialHelpMenu(client) {
         thumbnail: client.user?.displayAvatarURL?.({ size: 1024 }),
         fields: [
             {
-                name: '🚀 Get Start',
+                name: '🚀 __Get Start__',
                 value: [
                     '**1. Select to view the commands** — Click To View All Commands.',
                     '**2. Support Channel** — Need Help, Click To open a Ticket in our Support Channel.',                    '**3. Report Bug** — Click To Report a Bug.',
@@ -99,7 +99,7 @@ export async function createInitialHelpMenu(client) {
     });
 
     embed.setFooter({ 
-        text: "Made by Ritesh Gamer." 
+        text: "Made by __Ritesh Gamer__." 
     });
     embed.setTimestamp();
 
