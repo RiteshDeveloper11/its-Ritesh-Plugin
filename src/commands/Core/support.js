@@ -20,7 +20,7 @@ export default {
 
       await InteractionHelper.safeReply(interaction, {
         embeds: [
-          createEmbed({ title: "Need Help?", description: "Need Help? With Our Bot or Commands & Bug Report Click The Button Below." }),
+          createEmbed({ title: "Need Support?", description: "Need Support? If you need help with the bot, commands, or want to report a bug, click the button below to get support." }),
         ],
         components: [actionRow],
         flags: MessageFlags.Ephemeral,
