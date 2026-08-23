@@ -6,8 +6,8 @@ export default {
     slashOnly: true,
     category: 'Music',
     data: new SlashCommandBuilder()
-        .setName('queue')
-        .setDescription('Show the current music queue')
+        .setName('Search')
+        .setDescription('Show the current music Search')
         .addIntegerOption((opt) =>
             opt.setName('page').setDescription('Page number').setMinValue(1),
         ),
