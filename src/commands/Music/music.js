@@ -81,7 +81,7 @@ export default {
         .addSubcommand((sub) =>
             sub
                 .setName('move')
-                .setDescription('Move a track in the queue')
+                .setDescription('Move a track in the Search')
                 .addIntegerOption((opt) =>
                     opt.setName('from').setDescription('Current position').setRequired(true).setMinValue(1),
                 )
@@ -90,7 +90,7 @@ export default {
                 ),
         )
         .addSubcommand((sub) =>
-            sub.setName('clear').setDescription('Clear the queue'),
+            sub.setName('clear').setDescription('Clear the Search'),
         )
         .addSubcommand((sub) =>
             sub.setName('leave').setDescription('Disconnect the bot from the voice channel'),
