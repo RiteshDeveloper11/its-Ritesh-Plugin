@@ -7,14 +7,18 @@ export default {
     category: 'Music',
     data: new SlashCommandBuilder()
         .setName('play')
-        .setDescription('Play a song or add it to the Search')
+        .setDescription('Play a song or add it to the queue')
         .addStringOption((opt) =>
-            opt.setName('Search').setDescription('Song name or URL').setRequired(true),
+            opt.setName('query').setDescription('Song name or URL').setRequired(true),
         ),
 
     async execute(interaction, config, client) {
-        await InteractionHelper.safeDefer(interaction, { flags: MessageFlags.Ephemeral });
-        const result = await playQuery(client, interaction, interaction.options.getString('Search'));
+        const deferred = await InteractionHelper.safeDefer(interaction, { flags: MessageFlags.Ephemeral });
+        if (!deferred) {
+            return;
+        }
+
+        const result = await playQuery(client, interaction, interaction.options.getString('query'));
         await replyMusicSuccess(interaction, result.embed);
     },
 };
