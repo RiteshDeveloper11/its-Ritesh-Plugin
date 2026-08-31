@@ -74,8 +74,8 @@ export const giveawayJoinHandler = {
                 await interaction.reply({
                     embeds: [
                         successEmbed(
-                            'Success! You have entered the giveaway! 🎉',
-                            `Good luck! There are now ${participants.length} entry/entries.`
+                            'Successfully! Enter This Giveaway 🎉',
+                            `Good luck! There are now ${participants.length} entry.`
                         )
                     ],
                     flags: MessageFlags.Ephemeral
