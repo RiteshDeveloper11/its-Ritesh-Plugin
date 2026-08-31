@@ -70,7 +70,7 @@ export default {
             throw new TitanBotError(
                 'User lacks ManageGuild permission',
                 ErrorTypes.PERMISSION,
-                "You need the 'Manage Server' permission to start a giveaway.",
+                "You need the its, Ritesh Plugin Bot permission to start a giveaway.",
                 { userId: interaction.user.id, guildId: interaction.guildId }
             );
         }
