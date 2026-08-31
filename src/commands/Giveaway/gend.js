@@ -131,7 +131,7 @@ export default {
                 .map((id) => `<@${id}>`)
                 .join(",");
             const winnerPingMsg = await channel.send({
-                content: `🎉 CONGRATULATIONS ${winnerMentions}! You won the **${updatedGiveaway.prize}** giveaway! Please Crate a Ticket in General Support To claim Your prize.`,
+                content: `🎉 **CONGRATULATIONS ${winnerMentions}!** 🎉 You won the **${updatedGiveaway.prize}** giveaway! 🏆 Please create a 🎫 ticket in **General Support** to claim your prize. Thank you for participating! ❤️`,
             });
             updatedGiveaway.winnerPingMessageId = winnerPingMsg.id;
             await saveGiveaway(interaction.client, interaction.guildId, updatedGiveaway);
