@@ -7,7 +7,7 @@ import {
 export default {
     data: new SlashCommandBuilder()
         .setName('restart')
-        .setDescription('Restart the bot.')
+        .setDescription('Restart the its, Ritesh Plugin bot.')
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
     async execute(interaction) {
