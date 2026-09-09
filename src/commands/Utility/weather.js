@@ -49,7 +49,7 @@ export default {
         const cityDisplay = name;
 
         const weatherResponse = await fetch(
-            `${WEATHER_URL}?latitude=${latitude}&longitude=${longitude}&current_weather=true`,
+            `${WEATHER_URL}?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`,
         );
         const weatherData = await weatherResponse.json();
 
@@ -65,9 +65,9 @@ export default {
         }
 
         const current = weatherData.current || weatherData.current_weather || {};
-        const temperature = current.temperature != null ? Math.round(current.temperature) : "N/A";
-        const humidity = current.relativehumidity ?? current.relative_humidity_2m ?? "N/A";
-        const windSpeed = current.windspeed != null ? Math.round(current.windspeed) : "N/A";
+        const temperature = current.temperature_2m != null ? Math.round(current.temperature_2m) : "N/A";
+        const humidity = current.relative_humidity_2m ?? "N/A";
+        const windSpeed = current.wind_speed_10m != null ? Math.round(current.wind_speed_10m) : "N/A";
         const weatherCode = current.weathercode ?? current.weather_code ?? null;
 
         const condition = getWeatherDescription(weatherCode);
