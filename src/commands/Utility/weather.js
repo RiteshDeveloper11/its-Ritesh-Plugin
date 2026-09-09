@@ -65,9 +65,9 @@ export default {
         }
 
         const current = weatherData.current || weatherData.current_weather || {};
-        const temperature = current.temperature_2m != null ? Math.round(current.temperature_2m) : "N/A";
+        const temperature = current.temperature_2m != null ? current.temperature_2m.toFixed(1) : "N/A";
         const humidity = current.relative_humidity_2m ?? "N/A";
-        const windSpeed = current.wind_speed_10m != null ? Math.round(current.wind_speed_10m) : "N/A";
+        const windSpeed = current.wind_speed_10m != null ? current.wind_speed_10m.toFixed(1) : "N/A";
         const weatherCode = current.weathercode ?? current.weather_code ?? null;
 
         const condition = getWeatherDescription(weatherCode);
