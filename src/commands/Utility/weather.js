@@ -49,7 +49,7 @@ export default {
         const cityDisplay = name;
 
         const weatherResponse = await fetch(
-            `${WEATHER_URL}?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code`,
+            `${WEATHER_URL}?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,weather_code&wind_speed_unit=kmh`
         );
         const weatherData = await weatherResponse.json();
 
